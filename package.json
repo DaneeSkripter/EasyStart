@@ -1,6 +1,6 @@
 {
-  "name": "discord-easystart",
-  "version": "1.0.0",
+  "name": "dis-easystart",
+  "version": "1.0.2",
   "description": "Easy way how to create a discord bot",
   "main": "index.js",
   "scripts": {

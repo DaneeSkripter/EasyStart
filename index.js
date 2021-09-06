@@ -4,8 +4,8 @@ exports.EasyStart = function(options) {
     const { join } = require('path');
     const { GCommandsClient } = require("gcommands");
     const client = new GCommandsClient({
-        cmdDir: join(__dirname, 'commands'),
-        eventDir: join(__dirname, 'events'),
+        cmdDir: 'commands/',
+        eventDir: 'events/',
         caseSensitiveCommands: false, // true or false | whether to match the commands' caps
         caseSensitivePrefixes: false, // true or false | whether to match the prefix in message commands
         unkownCommandMessage: false, // true or false | send unkownCommand Message

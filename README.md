@@ -1,8 +1,11 @@
 ## 🤖 About 
 EasyStart is a package that can easily create discord bot.
 ## 📝 Use It
-```
+```sh
 npm i dis-easystart
+
+# Dev Version
+npm i dis-easystart@dev
 ```
 ## ✅ Example Bot
 ```js

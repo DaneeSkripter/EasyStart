@@ -1,4 +1,4 @@
-exports.EasyStart = async function(options) {
+exports.EasyClient = async function(options) {
   const axios = require('axios')
   const EasyUpdater = await axios.get('https://registry.npmjs.org/dis-easystart')
   const stableVersion = EasyUpdater.data['dist-tags'].latest

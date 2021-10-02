@@ -1,6 +1,6 @@
 {
   "name": "dis-easystart",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "Easy way how to create a discord bot",
   "main": "index.js",
   "scripts": {
@@ -16,14 +16,17 @@
     "bot",
     "discord-bot",
     "discord bot",
-    "slash commands"
+    "slash commands",
+    "command handler",
+    "slash handler",
+    "slash command handler"
   ],
   "author": "DaneeSkripter",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/DaneeSkripter/EasyStart/issues"
   },
-  "homepage": "https://github.com/DaneeSkripter/EasyStart#readme",
+  "homepage": "https://easystart.js.org",
   "dependencies": {
     "@keyv/mongo": "^1.1.0",
     "axios": "^0.21.4",

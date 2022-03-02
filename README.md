@@ -12,12 +12,10 @@ npm i dis-easystart@dev
 const { EasyClient } = require('dis-easystart')
 
 EasyClient({
-    prefix_type: 'both', //true = slash only, false = only normal, both = slash and normal
     prefix: '!', // bot prefix
-    database: '', //starts with mongodb://
     token: 'token', //bot token
     defaultCooldown: '3s', // default command cooldown
-    language: '', // english, spanish, portuguese, russian, german, czech, slovak, turkish, polish, indonesian, italian
+    devServerID: '', // ID of your testing/dev server
 })
 ```
 https://github.com/DaneeSkripter/EasyStart-Example
@@ -29,6 +27,7 @@ https://github.com/DaneeSkripter/EasyStart-Example
 
 | Version | Supported          |
 | ------- | ------------------ |
+| 2.1.x   | :white_check_mark: |
 | 2.0.x   | :white_check_mark: |
 | < 1.1.1  | :x:                |
 | 1.1.2   | :white_check_mark: |

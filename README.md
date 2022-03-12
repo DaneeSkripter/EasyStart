@@ -29,6 +29,5 @@ https://github.com/DaneeSkripter/EasyStart-Example
 | ------- | ------------------ |
 | 2.1.x   | :white_check_mark: |
 | 2.0.0   | :x: |
-| < 1.1.1  | :x:                |
-| 1.1.2   | :x: |
+| < 1.1.2  | :x:                |
 

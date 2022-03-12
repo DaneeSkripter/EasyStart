@@ -1,4 +1,4 @@
-exports.EasyClient = async function(options) {
+exports.EasyClient = async function({defaultCooldown = '', prefix = '', devServerID = '', token = ''}) {
   const axios = require('axios')
   const EasyUpdater = await axios.get('https://registry.npmjs.org/dis-easystart')
   const stableVersion = EasyUpdater.data['dist-tags'].latest
@@ -16,7 +16,7 @@ exports.EasyClient = async function(options) {
   
   // Set the default cooldown for commands
   Command.setDefaults({
-    cooldown: options.defaultCooldown,
+    cooldown: defaultCooldown,
   });
   
   // Set the default onError function for components
@@ -38,15 +38,15 @@ exports.EasyClient = async function(options) {
       join(__dirname, 'listeners')
     ],
     // Set the prefix for message commands
-    messagePrefix: options.prefix,
+    messagePrefix: prefix,
     // Set the guild where you will be developing your bot. This is usefull cause guild slash commands update instantly.
-    devGuildId: options.devServerID,
+    devGuildId: devServerID,
     // Set the intents you will be using (https://discordjs.guide/popular-topics/intents.html#gateway-intents)
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
   });
   
   // Login to the discord API
-  client.login(options.token);
+  client.login(token);
 }
 
 

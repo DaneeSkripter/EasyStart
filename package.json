@@ -4,7 +4,7 @@
   "description": "Easy way how to create a discord bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Done!"\"
   },
   "repository": {
     "type": "git",

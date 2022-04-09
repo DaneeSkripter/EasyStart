@@ -3,12 +3,13 @@ exports.EasyClient = async function({defaultCooldown = '', prefix = '', devServe
   const EasyUpdater = await axios.get('https://registry.npmjs.org/dis-easystart')
   const stableVersion = EasyUpdater.data['dist-tags'].latest
   const version = require('./package.json').version
+  const log = require('./log')
   if (stableVersion !== version && !version.includes('dev')) {
-    console.log('\x1b[93m[EasyStart Updater]\x1b[31m Please update EasyStart\x1b[33m https://www.npmjs.com/package/dis-easystart\x1b[0m')
+    log.updater('Please update EasyStart https://www.npmjs.com/package/dis-easystart')
   } else if (version.includes('dev')) {
-    console.log('\x1b[93m[EasyStart Updater]\x1b[31m You are using\x1b[33m DEV\x1b[31m version\x1b[0m')
+    log.updater('You are using DEV version')
   } else {
-    console.log('\x1b[93m', '[EasyStart Updater]', '\x1b[32m', 'You are using latest version!', '\x1b[0m')
+    log.updater('You are using latest version!')
   }
   const { GClient, Plugins, Command, Component } = require('gcommands');
   const { Intents } = require('discord.js');
@@ -47,7 +48,5 @@ exports.EasyClient = async function({defaultCooldown = '', prefix = '', devServe
   
   // Login to the discord API
   client.login(token);
+  log.success(`Logged as ${client.user.tag}`)
 }
-
-
-// options: prefix_type, prefix, database, token, defaultCooldown, language

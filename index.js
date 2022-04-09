@@ -48,5 +48,5 @@ exports.EasyClient = async function({defaultCooldown = '', prefix = '', devServe
   
   // Login to the discord API
   client.login(token);
-  log.success(`Logged as ${client.user.tag}`)
+  log.success(`The bot is online!`)
 }

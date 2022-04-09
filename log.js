@@ -5,7 +5,7 @@ const updater = function (message) {
 }
 
 const success = function (message) {
-    console.log(colors.yellow('[EasyStart ') + '|' + colors.green(' SUCCESS] ') + message)
+    console.log(colors.green('[EasyStart | SUCCESS] ') + message)
 }
 
 module.exports.success = success

@@ -1,5 +1,6 @@
 ## 🤖 About 
-EasyStart is a package that can easily create discord bot.
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/daneeskripter/EasyStart/CodeQL)
+- EasyStart is a package that can easily create discord bot.
 ## 📝 Use It
 ```sh
 npm i dis-easystart
